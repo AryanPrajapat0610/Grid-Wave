@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Grid from "./Controller.js/grid";
-import Controls from "./Controller.js/Control";
+import Grid from "./Controller/grid";
+import Controls from "./Controller/Control";
 
 
 const App = () => {
