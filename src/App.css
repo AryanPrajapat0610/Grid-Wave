@@ -1,63 +1,84 @@
+
 body {
-  font-family: "Press Start 2P", cursive;
-  background: linear-gradient(to right, #1f1c2c, #928dab);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
   margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
 }
 
 .title {
-  font-size: 3rem;
-  margin-bottom: 30px;
-  color: #ff6347;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00ff00;
+  text-shadow: 2px 2px 5px #000;
 }
 
 .score {
-  font-size: 2rem;
-  margin: 10px 0;
-  color: #ffd700;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  gap: 1px;
-  border: 3px solid white;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #1c1c1c, #292929);
 }
 
 .grid-item {
-  width: 20px;
-  height: 20px;
-  transition: background-color 0.3s linear, border-color 0.3s linear;
+  border: 1px solid #333;
 }
 
 .controls {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
   margin-top: 20px;
 }
 
-.controls button {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  background: #ff6347;
-  color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-  transition: background 0.3s ease;
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.controls button:hover {
-  background: #e55b3c;
+input {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #555;
+}
+
+.start-button, .reset-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #00ff00;
+  color: #121212;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover, .reset-button:hover {
+  background: #0aff0a;
+}
+
+.reset-button {
+  background: #ff0033;
+}
+
+.reset-button:hover {
+  background: #ff1a4a;
 }
