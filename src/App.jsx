@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Grid from "./Controller/grid";
+import Grid from "./Controller/Grid";
 import Controls from "./Controller/Control";
 
 
